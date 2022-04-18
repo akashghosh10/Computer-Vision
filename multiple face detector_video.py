@@ -1,5 +1,5 @@
 import cv2
-trained_face_data=cv2.CascadeClassifier('D:/PYTHON PROGRAMS/OPENCV/Face detector/haarcascade_frontalface_default.xml')
+trained_face_data=cv2.CascadeClassifier('D:/PYTHON PROGRAMS/COMPUTER VISION/Computer-Vision/haarcascade_frontalface_default.xml')
 webcam=cv2.VideoCapture(0)
 
 while True:
