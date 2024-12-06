@@ -1,6 +1,6 @@
 import cv2
 trained_face_data=cv2.CascadeClassifier('D:/PYTHON PROGRAMS/COMPUTER VISION/Computer-Vision/haarcascade_frontalface_default.xml')
-img=cv2.imread('D:/PYTHON PROGRAMS/COMPUTER VISION/Computer-Vision/face7.jpg')
+img=cv2.imread('D:/PYTHON PROGRAMS/COMPUTER VISION/Computer-Vision/face3.jpg')
 grayscaled_img=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 face_coordinates=trained_face_data.detectMultiScale(grayscaled_img)
 print(face_coordinates)

@@ -12,7 +12,7 @@ while True:
 
         face=frame[y:y+h, x:x+h]
         grayscaled_face=cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
-        smile=trained_smile_data.detectMultiScale(grayscaled_face, scaleFactor=1.7, minNeighbors=15)
+        smile=trained_smile_data.detectMultiScale(grayscaled_face, scaleFactor=1.7, minNeighbors=10)
         for (x_, y_, w_, h_) in smile:
             cv2.rectangle(face, (x_, y_), (x_+w_, y_+h_), (255, 0, 0), 1)
         if len(smile)>0:
